@@ -1,5 +1,4 @@
-// import "./styles.css";
-//parsel
+import "./styles.css";
 
 const detail = {
   length: 350,
