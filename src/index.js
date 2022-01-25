@@ -1,5 +1,4 @@
-// import "./styles.css";
-//parsel
+import "./styles.css";
 
 const detail = {
   length: 350,
@@ -19,12 +18,13 @@ const detail = {
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d');
   app.append(canvas);
-  canvas.width = 900;
-  canvas.height = 900;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
 
   const defaultAngle = 90;
 
-  ctx.translate(canvas.width / 2 - 200, canvas.height / 2 - 250);
+  ctx.translate(canvas.width / 2, canvas.height / 2 - 100);
 
   function drawDetail(detail, angle) {
     const { width, length } = detail;
